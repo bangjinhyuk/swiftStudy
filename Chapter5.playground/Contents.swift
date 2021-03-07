@@ -66,7 +66,21 @@ if let myValue = index{
     print("nils")
 }
 
-//: 타입 캐스팅
+//: 타입 캐스팅 업캐스팅
 
+let myButton: UIButton = UIButton()
 
+let myControl = myButton as UIControl
+
+//: 타입캐스팅 다운캐스팅
+
+let myScrollview: UIScrollView = UIScrollView()
+
+//let mytextView = myScrollview as! UITextView
+
+if let mytextView = myScrollview as? UITextView{
+    print("Type cast to UITextView succeeded")
+} else {
+    print("Type cast to UITextView failed")
+}
 
